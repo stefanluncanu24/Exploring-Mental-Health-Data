@@ -1,6 +1,6 @@
 <h1>Depression Prediction - Kaggle Competition</h1>
 
-<img width="1760" height="153" alt="image" src="https://github.com/user-attachments/assets/950f8feb-faba-4c43-83a8-1e57f3671e2a" />
+<img width="1735" height="153" alt="image" src="https://github.com/user-attachments/assets/9593440b-e969-4fb6-99b8-898a7499085c" />
 
 <p>This project is a solution to the Kaggle competition <a href="https://www.kaggle.com/competitions/playground-series-s4e11/overview">Exploring Mental Health Data Challenge</a>. The goal is to build a machine learning model that can predict whether an individual is experiencing depression (<code>Depression = 1</code>) or not (<code>Depression = 0</code>) based on various features related to demographics, lifestyle, and mental health indicators.</p>
 
