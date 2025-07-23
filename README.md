@@ -1,5 +1,7 @@
 <h1>Depression Prediction - Kaggle Competition</h1>
 
+<img width="1760" height="153" alt="image" src="https://github.com/user-attachments/assets/950f8feb-faba-4c43-83a8-1e57f3671e2a" />
+
 <p>This project is a solution to the Kaggle competition <a href="https://www.kaggle.com/competitions/playground-series-s4e11/overview">Exploring Mental Health Data Challenge</a>. The goal is to build a machine learning model that can predict whether an individual is experiencing depression (<code>Depression = 1</code>) or not (<code>Depression = 0</code>) based on various features related to demographics, lifestyle, and mental health indicators.</p>
 
 <!-- If you have an image, you can include it here -->
@@ -155,19 +157,6 @@ model.fit(X, y)
 <h2 id="prediction-and-submission">Prediction and Submission</h2>
 
 <p>We made predictions on the test set and prepared the submission files.</p>
-
-<pre><code># Predictions with the model trained on concatenated dataset
-y_pred_concat = model.predict(test.drop(['Depression'], axis=1))
-submission_concat = pd.DataFrame({'id': test['id'], 'Depression': y_pred_concat})
-submission_concat.to_csv('submissionCONCAT.csv', index=False)
-
-# Predictions with the model trained on artificial dataset
-# Assuming we have another model trained on the artificial dataset
-# model_legit = ... (model trained on artificial dataset)
-y_pred_legit = model_legit.predict(test.drop(['Depression'], axis=1))
-submission_legit = pd.DataFrame({'id': test['id'], 'Depression': y_pred_legit})
-submission_legit.to_csv('submissionLEGIT.csv', index=False)
-</code></pre>
 
 <h2 id="conclusion">Conclusion</h2>
 
